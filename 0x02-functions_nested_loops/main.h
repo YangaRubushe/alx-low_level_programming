@@ -10,4 +10,7 @@ void print_alphabet(void);
 /* Function prototype for the print_alphabet_x10 function */
 void print_alphabet_x10(void);
 
+/* Function prototype for the _islower function */
+int _islower(int c);
+
 #endif /* MAIN_H */
