@@ -1,21 +1,7 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
+/* Function prototype for the _putchar function */
+int _putchar(char c);
 
-    return (0);
-}
+#endif /* MAIN_H */
