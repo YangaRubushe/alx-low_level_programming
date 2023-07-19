@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h> // Include the standard library function isalpha
+#include <ctype.h>
 
 /**
  * _isalpha - Checks if a character is an alphabetic letter.
@@ -9,5 +9,6 @@
  */
 int _isalpha(int c)
 {
-    return isalpha(c);
+	/* Use C89-style comments */
+	return (isalpha(c));
 }
