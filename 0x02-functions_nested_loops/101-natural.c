@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - check for muiltiples of 3 and 5.
+ * Return: 0 always
+ */
 int main(void)
 {
 	int sum = 0;
