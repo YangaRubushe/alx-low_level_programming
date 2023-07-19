@@ -10,15 +10,15 @@
  */
 int main(void)
 {
-	int num1 = 1, num2 = 2, temp;
+	long int num1 = 1, num2 = 2, temp;
 	int count;
 
-	printf("%d, %d", num1, num2);
+	printf("%ld, %ld", num1, num2);
 
 	for (count = 2; count < 50; count++)
 	{
 		temp = num1 + num2;
-		printf(", %d", temp);
+		printf(", %ld", temp);
 
 		num1 = num2;
 		num2 = temp;
