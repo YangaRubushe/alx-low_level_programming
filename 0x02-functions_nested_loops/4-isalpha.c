@@ -9,6 +9,5 @@
  */
 int _isalpha(int c)
 {
-	/* Use C89-style comments */
 	return (isalpha(c));
 }
