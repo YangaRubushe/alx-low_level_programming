@@ -1,0 +1,11 @@
+# Ignore object files
+*.o
+
+# Ignore specific files
+0-create_array.o
+1-strdup.o
+100-argstostr.o
+101-strtow.o
+2-str_concat.o
+3-alloc_grid.o
+4-free_grid.o
