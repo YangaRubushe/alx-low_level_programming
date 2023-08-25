@@ -1,15 +1,18 @@
 section .data
-    hello db "Hello, Holberton", 0
-    fmt db "%s", 10, 0
+    msg db "Hello, Holberton", 10
+    msglen equ $ - msg
 
 section .text
-    extern printf
+    global main
 
-global main
 main:
-    push rbp
-    mov rdi, fmt
-    mov rsi, hello
-    call printf
-    pop rbp
-    ret
+    mov rax, 1         ; syscall number for write
+    mov rdi, 1         ; file descriptor (stdout)
+    mov rsi, msg       ; address of the message
+    mov rdx, msglen    ; length of the message
+    syscall
+
+    mov rax, 60        ; syscall number for exit
+    xor rdi, rdi       ; exit status 0
+    syscall
+
