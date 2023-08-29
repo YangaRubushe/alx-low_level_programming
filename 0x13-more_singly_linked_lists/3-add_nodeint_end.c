@@ -20,7 +20,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL); /* Return NULL if memory allocation failed */
 
 	new_node->n = n; /* Set the value of the new node */
-	new_node->next = NULL; /* The new node will be the last, so set next to NULL */
+	new_node->next = NULL;
 
 	if (*head == NULL)
 	{
@@ -33,11 +33,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 		while (current->next != NULL)
 		{
-			current = current->next; /* Traverse the list to find the last node */
+			current = current->next;
 		}
 
-		current->next = new_node; /* Set the next pointer of the last node to the new node */
+		current->next = new_node;
 	}
 
-	return (new_node); /* Return the address of the new element */
+	return (new_node);
 }
