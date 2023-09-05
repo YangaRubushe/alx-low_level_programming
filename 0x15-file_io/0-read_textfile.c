@@ -10,7 +10,7 @@
  * @letters: The number of letters to read and print.
  *
  * Return: The actual number of letters read and printed.
- *         0 if the file cannot be opened or read, filename is NULL, or write fails.
+ *
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
