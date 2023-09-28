@@ -8,7 +8,6 @@
  * or 0 if there is an invalid character in b
  * or if b is NULL
  */
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int ui;
